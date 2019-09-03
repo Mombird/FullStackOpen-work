@@ -1,0 +1,16 @@
+title 0_6_SPA_newNote
+
+note over browser:
+browser executes event handler that 
+    blocks default behavior,
+    creates a new note, adds it to the list,
+    rerenders list, before push to server
+end note
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+server takes content of push request
+and adds object to database
+end note
